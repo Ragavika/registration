@@ -51,7 +51,7 @@ Create `src/RegistrationWizard.jsx` and paste the wizard code.
 ```bash
 npm run dev
 ```
-Visit: 
+Visit:   https://registration-liart-phi.vercel.app/ 
 
 Push to GitHub
 ```bash
