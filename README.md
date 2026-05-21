@@ -66,6 +66,8 @@ git push -u origin main
 
 here are the screenshots
 
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/e4e0cead-0107-47df-bd71-ffa8e7da8bd1" />
 
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/31cdedeb-bf9e-4eaa-b4fb-7226afe746e5" />
 
-h
+<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/28930b0f-4d46-445e-a9e4-d3df61e0c8e2" />
