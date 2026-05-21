@@ -1,16 +1,71 @@
-# React + Vite
+The Registration Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-step onboarding wizard built with **React + Vite**.  
+This project demonstrates modern SaaS/FinTech style onboarding flows where data collection is segmented into smaller steps instead of one large form.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features
+- **Step Segmentation**: 3-step wizard (Personal Info → Account Details → Review & Submit).
+- **State Lifting**: Data persists across navigation (Back/Next).
+- **Validation**:
+  - Email must contain `@`.
+  - Password must be at least 8 characters.
+  - Confirm Password must match.
+- **UX Enhancements**:
+  - Real-time validation on input change.
+  - Disabled "Next" button until fields are valid.
+  - Show/Hide password toggle.
+  - Dynamic progress bar.
+- **Submission**: Logs final payload to console and shows success state.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project Structure
+```
+registration-wizard/
+├── index.html
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── RegistrationWizard.jsx
+│   └── main.jsx
+```
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Setup Instructions
+
+1. Create project with Vite
+```bash
+npm create vite@latest registration-wizard --template react
+cd registration-wizard
+npm install
+```
+
+2. Add the Wizard Component
+Create `src/RegistrationWizard.jsx` and paste the wizard code.
+
+
+4. Run the App
+```bash
+npm run dev
+```
+Visit: 
+
+Push to GitHub
+```bash
+git init
+git add .
+git commit -m "Initial commit - Registration Wizard"
+git branch -M main
+git remote add origin https://github.com/Ragavika/registration.git
+git push -u origin main
+```
+
+
+here are the screenshots
+
+
+
+h
