@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f3ff 0%, #edd8fc 50%, #e0e7ff 100%);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card container for wizard */
+.wizard-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px -10px rgba(109, 40, 217, 0.1), 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 460px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  color: #1e1b4b;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #aa3bff 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  color: #312e81;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+  margin: 10px 0;
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+input:focus {
+  outline: none;
+  border-color: #aa3bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(170, 59, 255, 0.15);
+}
+
+/* Date input specific style */
+input[type="date"] {
+  color: #475569;
+  font-family: inherit;
+}
+
+/* Action Buttons */
+button {
+  margin: 12px 6px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #aa3bff 0%, #6366f1 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(170, 59, 255, 0.2);
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(170, 59, 255, 0.35);
+  background: linear-gradient(135deg, #b852ff 0%, #7679f2 100%);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background: #cbd5e1;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Show/Hide password button inside wrapper */
+.password-input-container {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.password-input-container input {
+  margin: 0;
+  padding-right: 75px;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #aa3bff;
+  font-weight: 600;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+.password-toggle-btn:hover:not(:disabled) {
+  transform: translateY(-50%);
+  background: rgba(170, 59, 255, 0.08);
+  box-shadow: none;
+}
+
+.password-toggle-btn:active:not(:disabled) {
+  transform: translateY(-50%);
+}
+
+/* Progress bar container */
+.progress-container {
+  background: #f1f5f9;
+  height: 8px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #aa3bff 0%, #6366f1 100%);
+  height: 100%;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 9999px;
+}
+
+/* Step indicator text */
+.step-text {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* Errors */
+.error-text {
+  color: #ef4444;
+  font-size: 13px;
+  margin: 4px 0 10px;
+  text-align: left;
+  padding-left: 4px;
+  font-weight: 500;
+}
+
+/* Review details formatting */
+pre {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+  font-size: 14px;
+  color: #334155;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Success Card */
+.success-message {
+  color: #059669;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
